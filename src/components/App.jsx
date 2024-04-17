@@ -4,7 +4,9 @@ import '../styles/App.scss';
 const App = () => {
   return (
     <div>
-      <h1>Hello girl</h1>
+      <header>Hola soy el header</header>
+      <main>Hola soy el main</main>
+      <footer>footer</footer>
     </div>
   );
 };

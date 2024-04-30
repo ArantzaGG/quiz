@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Results } from './Results';
+import PropTypes from 'prop-types';
 
 export const Question = ({
   filteredQuestion,
@@ -111,4 +112,12 @@ export const Question = ({
       )}
     </>
   );
+};
+
+Question.propTypes = {
+  filteredQuestion: PropTypes.object,
+  setIndexQuestion: PropTypes.string,
+  indexQuestion: PropTypes.number,
+  questionsFiltered: PropTypes.string,
+  setActiveQuiz: PropTypes.boolean,
 };

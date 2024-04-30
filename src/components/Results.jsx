@@ -1,4 +1,6 @@
-export const Results = ({questionsFiltered, score, onReset}) => {
+import PropTypes from 'prop-types';
+
+export const Results = ({ questionsFiltered, score, onReset }) => {
   return (
     <>
       <div className='flex flex-col justify-evenly items-center shadow-xl rounded-lg w-[600px] h-[600px] gap-5'>
@@ -19,4 +21,9 @@ export const Results = ({questionsFiltered, score, onReset}) => {
       </div>
     </>
   );
+};
+Results.propTypes = {
+  score: PropTypes.number,
+  questionsFiltered: PropTypes.string,
+  onReset: PropTypes.func,
 };

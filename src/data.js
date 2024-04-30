@@ -1,10 +1,10 @@
 import Ciencia from './assets/ciencia.png';
 import Deportes from './assets/deportes.png';
-import Filosofia from './assets/filosofía.png';
-import Geografia from './assets/geografía.png';
+import Filosofia from './assets/filosofia.png';
+import Geografia from './assets/geografia.png';
 import Historia from './assets/historia.png';
 import Literatura from './assets/literatura.png';
-import Tecnologia from './assets/tecnología.png';
+import Tecnologia from './assets/tecnologia.png';
 
 export const imgs = [
   Ciencia,
@@ -21,9 +21,9 @@ export const categories = {
   literatura: 'Literatura',
   deportes: 'Deportes',
   ciencia: 'Ciencia',
-  filosofia: 'Filosofía',
-  tecnologia: 'Tecnología',
-  geografia: 'Geografía',
+  filosofia: 'Filosofia',
+  tecnologia: 'Tecnologia',
+  geografia: 'Geografia',
 };
 
 const {

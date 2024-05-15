@@ -1,4 +1,4 @@
-import Ciencia from './assets/ciencia.png';
+import Html from './assets/html.png';
 import Deportes from './assets/deportes.png';
 import Filosofia from './assets/filosofia.png';
 import Geografia from './assets/geografia.png';
@@ -7,7 +7,7 @@ import Literatura from './assets/literatura.png';
 import Tecnologia from './assets/tecnologia.png';
 
 export const imgs = [
-  Ciencia,
+  Html,
   Deportes,
   Filosofia,
   Geografia,
@@ -20,7 +20,7 @@ export const categories = {
   historia: 'Historia',
   literatura: 'Literatura',
   deportes: 'Deportes',
-  ciencia: 'Ciencia',
+  HTML: 'HTML',
   filosofia: 'Filosofia',
   tecnologia: 'Tecnologia',
   geografia: 'Geografia',
@@ -31,7 +31,7 @@ const {
   tecnologia,
   literatura,
   deportes,
-  ciencia,
+  HTML,
   filosofia,
   geografia,
 } = categories;
@@ -67,11 +67,15 @@ export const questions = [
   },
   {
     id: 4,
-    difficulty: 'Medio',
-    question: "¿Qué sustancia es conocida como la 'molécula de la vida'?",
-    category: ciencia,
-    correct_answer: 'El ADN',
-    incorrect_answers: ['La glucosa', 'La insulina', 'La proteína'],
+    difficulty: 'Fácil',
+    question: '¿Qué significa HTML?',
+    category: HTML,
+    correct_answer: 'HyperText Markup Language',
+    incorrect_answers: [
+      ' Hyperlinks and Text Markup Language',
+      'Home Tool Markup Language',
+      'HyperText and Meta Language',
+    ],
   },
   {
     id: 5,
@@ -119,14 +123,14 @@ export const questions = [
   },
   {
     id: 10,
-    difficulty: 'Medio',
-    question: '¿Qué es lo que se mide con la escala de Richter?',
-    category: ciencia,
-    correct_answer: 'La magnitud de los terremotos',
+    difficulty: 'Fácil',
+    question: '¿Cuál es la etiqueta correcta para insertar una línea horizontal en HTML?',
+    category: HTML,
+    correct_answer: '<hr>',
     incorrect_answers: [
-      'La velocidad del sonido',
-      'La intensidad de los huracanes',
-      'La temperatura en grados Fahrenheit',
+      '<line>',
+      '<br>',
+      '<horizontal>',
     ],
   },
   {
@@ -139,14 +143,14 @@ export const questions = [
   },
   {
     id: 12,
-    difficulty: 'Medio',
-    question: '¿Qué es el efecto invernadero?',
-    category: ciencia,
-    correct_answer: 'Un fenómeno atmosférico que retiene el calor en la Tierra',
+    difficulty: 'Fácil',
+    question: '¿Cómo se define un enlace en HTML?',
+    category: HTML,
+    correct_answer: '<a href="url">Texto del enlace</a>',
     incorrect_answers: [
-      'Un tipo de casa de vidrio para plantas',
-      'Un proceso químico para conservar alimentos',
-      'Un tipo de sistema de calefacción para edificios',
+      '<link url="url">Texto del enlace</link>',
+      '<href="url">Texto del enlace</href>',
+      '<anchor url="url">Texto del enlace</anchor>',
     ],
   },
   {
@@ -161,10 +165,10 @@ export const questions = [
   {
     id: 14,
     difficulty: 'Fácil',
-    question: '¿Cuál es el planeta más grande del sistema solar?',
-    category: ciencia,
-    correct_answer: 'Júpiter',
-    incorrect_answers: ['Saturno', 'Neptuno', 'Urano'],
+    question: '¿Qué atributo HTML se utiliza para definir el texto alternativo de una imagen?',
+    category: HTML,
+    correct_answer: 'alt',
+    incorrect_answers: ['title', 'description', 'text'],
   },
   {
     id: 15,
@@ -180,11 +184,11 @@ export const questions = [
   },
   {
     id: 16,
-    difficulty: 'Medio',
-    question: '¿Cuál es el elemento químico más abundante en la Tierra?',
-    category: ciencia,
-    correct_answer: 'Oxígeno',
-    incorrect_answers: ['Nitrógeno', 'Hierro', 'Silicio'],
+    difficulty: 'Fácil',
+    question: '¿Cómo se hace una lista no ordenada en HTML?',
+    category: HTML,
+    correct_answer: '<p>',
+    incorrect_answers: ['<par>', '<para>', '<paragraph>'],
   },
   {
     id: 17,
@@ -204,11 +208,11 @@ export const questions = [
   },
   {
     id: 19,
-    difficulty: 'Difícil',
-    question: '¿Qué científico propuso la teoría del Big Bang?',
-    category: ciencia,
-    correct_answer: 'Georges Lemaître',
-    incorrect_answers: ['Albert Einstein', 'Stephen Hawking', 'Isaac Newton'],
+    difficulty: 'Fácil',
+    question: '¿Qué etiqueta se utiliza para crear una tabla en HTML?',
+    category: HTML,
+    correct_answer: '<table>',
+    incorrect_answers: ['<tab>', '<tbl>', '<grid>'],
   },
   {
     id: 20,
@@ -225,10 +229,10 @@ export const questions = [
   {
     id: 21,
     difficulty: 'Fácil',
-    question: '¿Cuál es el órgano más grande del cuerpo humano?',
-    category: ciencia,
-    correct_answer: 'La piel',
-    incorrect_answers: ['El hígado', 'El corazón', 'Los pulmones'],
+    question: '¿Cuál es la etiqueta HTML correcta para agregar un encabezado de nivel 1?',
+    category: HTML,
+    correct_answer: '<h1>',
+    incorrect_answers: ['<header1>', '<head1>', '<heading1>'],
   },
   {
     id: 22,
@@ -249,10 +253,10 @@ export const questions = [
   {
     id: 24,
     difficulty: 'Fácil',
-    question: '¿Cuál es el planeta más cercano al Sol?',
-    category: ciencia,
-    correct_answer: 'Mercurio',
-    incorrect_answers: ['Venus', 'Marte', 'Júpiter'],
+    question: '¿Cómo se inserta una imagen en una página HTML?',
+    category: HTML,
+    correct_answer: '<img src="url_de_la_imagen" alt="texto alternativo">',
+    incorrect_answers: ['<image src="url_de_la_imagen" alt="texto alternativo">', '<pic src="url_de_la_imagen" alt="texto alternativo">', '<src="url_de_la_imagen" alt="texto alternativo">'],
   },
   {
     id: 25,
@@ -282,10 +286,10 @@ export const questions = [
   {
     id: 28,
     difficulty: 'Fácil',
-    question: '¿Qué elemento químico tiene el símbolo H?',
-    category: ciencia,
-    correct_answer: 'Hidrógeno',
-    incorrect_answers: ['Helio', 'Hierro', 'Hormigón'],
+    question: '¿Cuál es la etiqueta HTML para agregar un formulario?',
+    category: HTML,
+    correct_answer: '<form>',
+    incorrect_answers: ['<frm>', '<formulario>', '<formtag>'],
   },
   {
     id: 29,
@@ -791,36 +795,36 @@ export const questions = [
   },
   {
     id: 80,
-    difficulty: 'Difícil',
-    question: '¿Cuál es la partícula subatómica más pesada?',
-    category: ciencia,
-    correct_answer: 'Quark top',
-    incorrect_answers: ['Electrón', 'Protón', 'Neutrón'],
+    difficulty: 'Media',
+    question: '¿Cuál es el atributo correcto para abrir un enlace en una nueva pestaña o ventana?',
+    category: HTML,
+    correct_answer: 'target="_blank"',
+    incorrect_answers: ['new="_tab"', 'open="new"', 'window="new"'],
   },
   {
     id: 81,
-    category: ciencia,
+    category: HTML,
     difficulty: 'Medio',
-    question: '¿Qué es la capa de ozono?',
+    question: '¿Cómo se especifica un fondo de color para una página HTML?',
     correct_answer:
-      'Una capa de gas que protege la Tierra de la radiación ultravioleta del sol',
+      '<body style="background-color:lightblue;">',
     incorrect_answers: [
-      'Una capa de nubes en la atmósfera',
-      'La capa más externa de la Tierra',
-      'Una capa de gases que produce el efecto invernadero',
+      '<background color="lightblue">',
+      '<body bgcolor="lightblue">',
+      '<body color="lightblue">',
     ],
   },
   {
     id: 82,
-    category: ciencia,
-    difficulty: 'Difícil',
-    question: '¿Qué es la antimateria?',
+    category: HTML,
+    difficulty: 'Media',
+    question: '¿Qué etiqueta se usa para crear una celda de encabezado en una tabla HTML?',
     correct_answer:
-      'Una forma de materia que tiene propiedades opuestas a la materia ordinaria',
+      '<th>',
     incorrect_answers: [
-      'Una forma de materia que no tiene carga eléctrica',
-      'Una forma de materia que no tiene masa',
-      'Una forma de energía que tiene la capacidad de desintegrar la materia',
+      '<thead>',
+      '<header>',
+      '<trh>',
     ],
   },
   {
@@ -844,4 +848,101 @@ export const questions = [
     correct_answer: 'ENIAC',
     incorrect_answers: ['UNIVAC', 'COLOSSUS', 'EDSAC'],
   },
+  {
+    id: 85,
+    category: HTML,
+    difficulty: 'Media',
+    question: '¿Cómo se especifica una lista ordenada en HTML?',
+    correct_answer:
+      '<ol><li>Elemento 1</li><li>Elemento 2</li></ol>',
+    incorrect_answers: [
+      '<ul><li>Elemento 1</li><li>Elemento 2</li></ul>',
+      '<ordered><li>Elemento 1</li><li>Elemento 2</li></ordered>',
+      '<list><li>Elemento 1</li><li>Elemento 2</li></list>',
+    ],
+  },
+  {
+    id: 86,
+    category: "HTML",
+    difficulty: "Media",
+    question: "¿Qué etiqueta HTML se utiliza para definir una sección independiente de contenido en un documento HTML?",
+    correct_answer: "<section>",
+    incorrect_answers: [
+      "<div>",
+      "<article>",
+      "<header>"
+    ]
+  },
+  {
+    id: 87,
+    category: "HTML",
+    difficulty: "Media",
+    question: "¿Cuál es la forma correcta de crear un comentario en HTML?",
+    correct_answer: "<!-- Este es un comentario -->",
+    incorrect_answers: [
+      "/* Este es un comentario */",
+      "// Este es un comentario",
+      "<-- Este es un comentario -->"
+    ]
+  },
+  {
+    id: 88,
+    category: "HTML",
+    difficulty: "Media",
+    question: "¿Cómo se define una celda en una tabla HTML?",
+    correct_answer: "<td>",
+    incorrect_answers: [
+      "<tr>",
+      "<cell>",
+      "<tabledata>"
+    ]
+  },
+  {
+    id: 89,
+    category: "HTML",
+    difficulty: "Media",
+    question: "¿Qué atributo HTML se usa para combinar celdas horizontalmente en una tabla?",
+    correct_answer: "colspan",
+    incorrect_answers: [
+      "rowspan",
+      "merge",
+      "span"
+    ]
+  },
+  {
+    id: 90,
+    category: "HTML",
+    difficulty: "Media",
+    question: "¿Cuál es la etiqueta HTML correcta para reproducir un video?",
+    correct_answer: "<video>",
+    incorrect_answers: [
+      "<vid>",
+      "<media>",
+      "<movie>"
+    ]
+  },
+  {
+    id: 91,
+    category: "HTML",
+    difficulty: "Media",
+    question: "¿Cómo se define un área de texto en un formulario HTML?",
+    correct_answer: "<textarea>",
+    incorrect_answers: [
+      "<input type=\"textarea\">",
+      "<textbox>",
+      "<input type=\"text\">"
+    ]
+  },
+  {
+    id: 92,
+    category: "HTML",
+    difficulty: "Media",
+    question: "¿Qué atributo se utiliza para establecer un enlace anclado (bookmark) dentro de una página HTML?",
+    correct_answer: "id",
+    incorrect_answers: [
+      "name",
+      "href",
+      "link"
+    ]
+  }
 ];

@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom';
+
 import { imgs, categories } from '../data';
 import { CategoryCard } from './CategoryCard';
 
 const [
-  imgCiencia,
+  imgHtml,
   imgDeportes,
   imgFilosofia,
   imgGeografia,
@@ -16,9 +16,9 @@ export const CategoryList = () => {
   return (
     <div className="flex flex-row flex-wrap justify-center gap-4 mt-10">
       <CategoryCard
-        category={categories.ciencia}
-        src={imgCiencia}
-        alt={`Categoría ${categories.ciencia}`}
+        category={categories.HTML}
+        src={imgHtml}
+        alt={`Categoría ${categories.HTML}`}
         gradientColor="from-purple-500 to-pink-500"
       />
       <CategoryCard

@@ -5,11 +5,11 @@ import { CategoryCard } from './CategoryCard';
 const [
   imgHtml,
   imgCss,
-  imgFilosofia,
-  imgGeografia,
-  imgHistoria,
-  imgLiteratura,
-  imgTecnologia,
+  imgJavascript,
+  //imgGeografia,
+  //imgHistoria,
+  //imgLiteratura,
+  //imgTecnologia,
 ] = imgs;
 
 export const CategoryList = () => {
@@ -28,11 +28,12 @@ export const CategoryList = () => {
         gradientColor="from-blue-500 to-white-500"
       />
       <CategoryCard
-        category={categories.filosofia}
-        src={imgFilosofia}
-        alt={`Categoría ${categories.filosofia}`}
-        gradientColor="from-red-400 to-pink-400"
+        category={categories.JS}
+        src={imgJavascript}
+        alt={`Categoría ${categories.JS}`}
+        gradientColor="from-yellow-600 to-white-200"
       />
+      {/* 
       <CategoryCard
         category={categories.geografia}
         src={imgGeografia}
@@ -56,7 +57,7 @@ export const CategoryList = () => {
         src={imgTecnologia}
         alt={`Categoría ${categories.tecnologia}`}
         gradientColor="from-violet-900 to-rose-500"
-      />
+      />*/}
     </div>
   );
 };

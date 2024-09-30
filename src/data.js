@@ -1,6 +1,6 @@
 import Html from './assets/html.png';
 import Css from './assets/css.png';
-import Filosofia from './assets/filosofia.png';
+import Javascript from './assets/js.png';
 import Geografia from './assets/geografia.png';
 import Historia from './assets/historia.png';
 import Literatura from './assets/literatura.png';
@@ -9,7 +9,7 @@ import Tecnologia from './assets/tecnologia.png';
 export const imgs = [
   Html,
   Css,
-  Filosofia,
+  Javascript,
   Geografia,
   Historia,
   Literatura,
@@ -21,12 +21,12 @@ export const categories = {
   literatura: 'Literatura',
   CSS: 'CSS',
   HTML: 'HTML',
-  filosofia: 'Filosofia',
+  JS: 'JS',
   tecnologia: 'Tecnologia',
   geografia: 'Geografia',
 };
 
-const { historia, tecnologia, literatura, CSS, HTML, filosofia, geografia } =
+const { historia, tecnologia, literatura, CSS, HTML, JS, geografia } =
   categories;
 
 export const questions = [
@@ -74,7 +74,7 @@ export const questions = [
     id: 5,
     difficulty: 'Difícil',
     question: '¿Quién es considerado el padre de la filosofía occidental?',
-    category: filosofia,
+    category: JS,
     correct_answer: 'Sócrates',
     incorrect_answers: ['Aristóteles', 'Platón', 'Nietzsche'],
   },
@@ -192,11 +192,12 @@ export const questions = [
   },
   {
     id: 18,
-    difficulty: 'Medio',
-    question: '¿Quién es considerado el padre de la filosofía occidental?',
-    category: filosofia,
-    correct_answer: 'Sócrates',
-    incorrect_answers: ['Platón', 'Aristóteles', 'Descartes'],
+    difficulty: 'Fácil',
+    question:
+      '¿Cuál de las siguientes es una forma correcta de declarar una variable en JavaScript?',
+    category: JS,
+    correct_answer: 'var',
+    incorrect_answers: ['let', 'const', 'variable'],
   },
   {
     id: 19,
@@ -683,112 +684,92 @@ export const questions = [
   },
   {
     id: 70,
-    category: filosofia,
     difficulty: 'Fácil',
-    question: '¿Cuál es la obra más conocida de Platón?',
-    correct_answer: 'La República',
-    incorrect_answers: ['El Banquete', 'Timeo', 'Fedón'],
+    question:
+      '¿Qué método se utiliza para convertir una cadena a un número en JavaScript?',
+    category: JS,
+    correct_answer: 'parseInt',
+    incorrect_answers: ['Number', 'convertToInt', 'toInteger'],
   },
   {
     id: 71,
-    category: filosofia,
-    difficulty: 'Medio',
-    question: '¿Cuál es el concepto central de la filosofía de Descartes?',
-    correct_answer: 'El cogito ergo sum',
-    incorrect_answers: ['El empirismo', 'El materialismo', 'La fenomenología'],
+    difficulty: 'Fácil',
+    question: '¿Cuál de los siguientes es un tipo de dato en JavaScript?',
+    category: JS,
+    correct_answer: 'boolean',
+    incorrect_answers: ['character', 'float', 'stringify'],
   },
   {
     id: 72,
-    category: filosofia,
-    difficulty: 'Difícil',
-    question: '¿Qué es la dialéctica en la filosofía de Hegel?',
-    correct_answer:
-      'El método para llegar a la verdad mediante la contradicción',
-    incorrect_answers: [
-      'La creación de un sistema filosófico',
-      'La negación de la realidad',
-      'El análisis de los procesos cognitivos',
-    ],
+    difficulty: 'Fácil',
+    question:
+      '¿Qué símbolo se utiliza para hacer comentarios de una sola línea en JavaScript?',
+    category: JS,
+    correct_answer: '//',
+    incorrect_answers: ['#', '/*', '<!--'],
   },
   {
     id: 73,
-    category: filosofia,
-    difficulty: 'Medio',
-    question: '¿Qué es el nihilismo en la filosofía?',
-    correct_answer: 'La negación de todos los valores y creencias',
+    difficulty: 'Fácil',
+    question: '¿Cómo se define una función en JavaScript?',
+    category: JS,
+    correct_answer: 'function myFunction() {}',
     incorrect_answers: [
-      'La afirmación de la existencia de un ser superior',
-      'La creencia en la reencarnación',
-      'La negación de la existencia del mundo externo',
+      'function: myFunction() {}',
+      'def myFunction() {}',
+      'myFunction() => {}',
     ],
   },
   {
     id: 74,
-    category: filosofia,
-    difficulty: 'Difícil',
-    question: '¿Qué es la deconstrucción en la filosofía de Jacques Derrida?',
-    correct_answer:
-      'El análisis crítico de la relación entre los significados y los conceptos',
-    incorrect_answers: [
-      'La creación de nuevos conceptos a partir de la combinación de los antiguos',
-      'La búsqueda de la verdad absoluta',
-      'La negación de la existencia del lenguaje',
-    ],
+    difficulty: 'Fácil',
+    question: '¿Cuál es el resultado de 2 + "2" en JavaScript?',
+    category: JS,
+    correct_answer: '22',
+    incorrect_answers: ['4', 'Error', '22 como número'],
   },
   {
     id: 75,
-    category: filosofia,
     difficulty: 'Fácil',
-    question: '¿Qué es la ética?',
-    correct_answer:
-      'La rama de la filosofía que estudia la moral y la conducta humana',
-    incorrect_answers: [
-      'La rama de la filosofía que estudia la lógica',
-      'La rama de la filosofía que estudia la mente',
-      'La rama de la filosofía que estudia el conocimiento',
-    ],
+    question:
+      '¿Qué función se usa para mostrar un mensaje en un cuadro de alerta?',
+    category: JS,
+    correct_answer: 'alert()',
+    incorrect_answers: ['msg()', 'popup()', 'message()'],
   },
   {
     id: 76,
-    category: filosofia,
-    difficulty: 'Medio',
-    question: '¿Qué es el imperativo categórico en la filosofía de Kant?',
-    correct_answer: 'La regla moral que se debe seguir en cualquier situación',
-    incorrect_answers: [
-      'La creencia en la existencia de un Dios creador',
-      'La negación de la libertad humana',
-      'La afirmación de la existencia de una verdad absoluta',
-    ],
+    difficulty: 'Fácil',
+    question:
+      '¿Cuál es el operador utilizado para comparar valores y tipos en JavaScript?',
+    category: JS,
+    correct_answer: '===',
+    incorrect_answers: ['==', '!==', '=>'],
   },
   {
     id: 77,
     difficulty: 'Fácil',
-    question: '¿Quién fue el autor de la obra "La República"?',
-    category: filosofia,
-    correct_answer: 'Platón',
-    incorrect_answers: ['Aristóteles', 'Sócrates', 'Nietzsche'],
+    question:
+      '¿Qué método se usa para agregar un elemento al final de un array?',
+    category: JS,
+    correct_answer: 'push()',
+    incorrect_answers: ['add()', 'append()', 'insert()'],
   },
   {
     id: 78,
-    difficulty: 'Medio',
-    question:
-      '¿Cuál es el término filosófico para referirse al estudio del conocimiento?',
-    category: filosofia,
-    correct_answer: 'Epistemología',
-    incorrect_answers: ['Ontología', 'Metafísica', 'Lógica'],
+    difficulty: 'Fácil',
+    question: '¿Qué objeto se utiliza para trabajar con fechas en JavaScript?',
+    category: JS,
+    correct_answer: 'Date',
+    incorrect_answers: ['Time', 'Calendar', 'Moment'],
   },
   {
     id: 79,
-    difficulty: 'Difícil',
-    question:
-      '¿Quién escribió el libro "El mundo como voluntad y representación"?',
-    category: filosofia,
-    correct_answer: 'Arthur Schopenhauer',
-    incorrect_answers: [
-      'Friedrich Nietzsche',
-      'Immanuel Kant',
-      'Jean-Paul Sartre',
-    ],
+    difficulty: 'Media',
+    question: '¿Cuál es el resultado de typeof NaN en JavaScript?',
+    category: JS,
+    correct_answer: 'number',
+    incorrect_answers: ['undefined', 'NaN', 'string'],
   },
   {
     id: 80,
@@ -1011,5 +992,86 @@ export const questions = [
       'rgba(255, 0, 0)',
       'rgba(255, 0, 0, 50)',
     ],
+  },
+  {
+    id: 103,
+    category: JS,
+    difficulty: 'Media',
+    question:
+      '¿Qué método se utiliza para convertir un objeto JSON en una cadena en JavaScript?',
+    correct_answer: 'JSON.stringify()',
+    incorrect_answers: ['JSON.parse()', 'Object.toString()', 'Stringify()'],
+  },
+  {
+    id: 104,
+    category: JS,
+    difficulty: 'Media',
+    question:
+      '¿Qué palabra clave se usa para declarar una variable que no puede ser reasignada?',
+    correct_answer: 'const',
+    incorrect_answers: ['let', 'var', 'immutable'],
+  },
+  {
+    id: 105,
+    category: JS,
+    difficulty: 'Media',
+    question: '¿Cuál es la forma correcta de crear un objeto en JavaScript?',
+    correct_answer: 'let obj = {};',
+    incorrect_answers: [
+      'let obj = [];',
+      'let obj = ();',
+      'let obj = new Object();',
+    ],
+  },
+  {
+    id: 106,
+    category: JS,
+    difficulty: 'Media',
+    question:
+      '¿Qué método se usa para eliminar el último elemento de un array?',
+    correct_answer: 'pop()',
+    incorrect_answers: ['shift()', 'remove()', 'slice()'],
+  },
+  {
+    id: 107,
+    category: JS,
+    difficulty: 'Media',
+    question: '¿Cuál es el resultado de `0 == "0"` en JavaScript?',
+    correct_answer: 'true',
+    incorrect_answers: ['false', 'undefined', 'NaN'],
+  },
+  {
+    id: 108,
+    category: JS,
+    difficulty: 'Media',
+    question:
+      '¿Qué evento se usa para detectar cuando un usuario envía un formulario?',
+    correct_answer: 'submit',
+    incorrect_answers: ['click', 'change', 'focus'],
+  },
+  {
+    id: 109,
+    category: JS,
+    difficulty: 'Media',
+    question: '¿Qué método se utiliza para recorrer cada elemento de un array?',
+    correct_answer: 'forEach()',
+    incorrect_answers: ['map()', 'filter()', 'each()'],
+  },
+  {
+    id: 110,
+    category: JS,
+    difficulty: 'Media',
+    question: '¿Cuál es el alcance de una variable declarada con `let`?',
+    correct_answer: 'bloque',
+    incorrect_answers: ['global', 'función', 'módulo'],
+  },
+  {
+    id: 111,
+    category: JS,
+    difficulty: 'Media',
+    question:
+      '¿Qué estructura se utiliza para manejar excepciones en JavaScript?',
+    correct_answer: 'try...catch',
+    incorrect_answers: ['if...else', 'switch', 'throw'],
   },
 ];

@@ -10,7 +10,7 @@ export const CategoryCard = ({ category, alt, src, gradientColor }) => {
       <div className='p-5 flex justify-center items-center'>
         <img src={src} alt={alt} className='w-36' />
       </div>{' '}
-      <h1 className='text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60 p-3 px-5'>
+      <h1 className='text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60 p-3 px-5 text-center'>
         {category}
       </h1>
     </Link>

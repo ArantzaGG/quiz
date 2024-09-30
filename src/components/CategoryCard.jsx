@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 export const CategoryCard = ({ category, alt, src, gradientColor }) => {
   return (
@@ -14,4 +15,12 @@ export const CategoryCard = ({ category, alt, src, gradientColor }) => {
       </h1>
     </Link>
   );
+};
+
+// Definición de propTypes
+CategoryCard.propTypes = {
+  category: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
+  gradientColor: PropTypes.string,
 };

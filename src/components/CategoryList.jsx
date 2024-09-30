@@ -4,7 +4,7 @@ import { CategoryCard } from './CategoryCard';
 
 const [
   imgHtml,
-  imgDeportes,
+  imgCss,
   imgFilosofia,
   imgGeografia,
   imgHistoria,
@@ -19,13 +19,13 @@ export const CategoryList = () => {
         category={categories.HTML}
         src={imgHtml}
         alt={`Categoría ${categories.HTML}`}
-        gradientColor="from-purple-500 to-pink-500"
+        gradientColor="from-orange-500 to-black-500"
       />
       <CategoryCard
-        category={categories.deportes}
-        src={imgDeportes}
-        alt={`Categoría ${categories.deportes}`}
-        gradientColor="from-purple-500 to-pink-500"
+        category={categories.CSS}
+        src={imgCss}
+        alt={`Categoría ${categories.CSS}`}
+        gradientColor="from-blue-500 to-white-500"
       />
       <CategoryCard
         category={categories.filosofia}

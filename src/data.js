@@ -1,5 +1,5 @@
 import Html from './assets/html.png';
-import Deportes from './assets/deportes.png';
+import Css from './assets/css.png';
 import Filosofia from './assets/filosofia.png';
 import Geografia from './assets/geografia.png';
 import Historia from './assets/historia.png';
@@ -8,7 +8,7 @@ import Tecnologia from './assets/tecnologia.png';
 
 export const imgs = [
   Html,
-  Deportes,
+  Css,
   Filosofia,
   Geografia,
   Historia,
@@ -19,22 +19,15 @@ export const imgs = [
 export const categories = {
   historia: 'Historia',
   literatura: 'Literatura',
-  deportes: 'Deportes',
+  CSS: 'CSS',
   HTML: 'HTML',
   filosofia: 'Filosofia',
   tecnologia: 'Tecnologia',
   geografia: 'Geografia',
 };
 
-const {
-  historia,
-  tecnologia,
-  literatura,
-  deportes,
-  HTML,
-  filosofia,
-  geografia,
-} = categories;
+const { historia, tecnologia, literatura, CSS, HTML, filosofia, geografia } =
+  categories;
 
 export const questions = [
   {
@@ -61,7 +54,7 @@ export const questions = [
     id: 3,
     difficulty: 'Fácil',
     question: '¿En qué deporte se utiliza un disco?',
-    category: deportes,
+    category: CSS,
     correct_answer: 'Hockey sobre hielo',
     incorrect_answers: ['Fútbol', 'Baloncesto', 'Béisbol'],
   },
@@ -124,22 +117,20 @@ export const questions = [
   {
     id: 10,
     difficulty: 'Fácil',
-    question: '¿Cuál es la etiqueta correcta para insertar una línea horizontal en HTML?',
+    question:
+      '¿Cuál es la etiqueta correcta para insertar una línea horizontal en HTML?',
     category: HTML,
     correct_answer: '<hr>',
-    incorrect_answers: [
-      '<line>',
-      '<br>',
-      '<horizontal>',
-    ],
+    incorrect_answers: ['<line>', '<br>', '<horizontal>'],
   },
   {
     id: 11,
     difficulty: 'Fácil',
-    question: '¿Qué país ganó el primer Mundial de Fútbol?',
-    category: deportes,
-    correct_answer: 'Uruguay',
-    incorrect_answers: ['Brasil', 'Argentina', 'Alemania'],
+    question:
+      '¿Qué propiedad CSS se utiliza para cambiar el color de fondo de un elemento?',
+    category: CSS,
+    correct_answer: 'background-color',
+    incorrect_answers: ['color', 'font-color', 'bgcolor'],
   },
   {
     id: 12,
@@ -155,17 +146,18 @@ export const questions = [
   },
   {
     id: 13,
-    difficulty: 'Medio',
+    difficulty: 'Fácil',
     question:
-      '¿En qué año se celebraron los primeros Juegos Olímpicos modernos?',
-    category: deportes,
-    correct_answer: '1896',
-    incorrect_answers: ['1900', '1924', '1936'],
+      '¿Cuál es la unidad de medida para el tamaño de fuente que se basa en el tamaño del texto del elemento padre?',
+    category: CSS,
+    correct_answer: 'em',
+    incorrect_answers: ['px', 'rem', 'pt'],
   },
   {
     id: 14,
     difficulty: 'Fácil',
-    question: '¿Qué atributo HTML se utiliza para definir el texto alternativo de una imagen?',
+    question:
+      '¿Qué atributo HTML se utiliza para definir el texto alternativo de una imagen?',
     category: HTML,
     correct_answer: 'alt',
     incorrect_answers: ['title', 'description', 'text'],
@@ -229,7 +221,8 @@ export const questions = [
   {
     id: 21,
     difficulty: 'Fácil',
-    question: '¿Cuál es la etiqueta HTML correcta para agregar un encabezado de nivel 1?',
+    question:
+      '¿Cuál es la etiqueta HTML correcta para agregar un encabezado de nivel 1?',
     category: HTML,
     correct_answer: '<h1>',
     incorrect_answers: ['<header1>', '<head1>', '<heading1>'],
@@ -256,7 +249,11 @@ export const questions = [
     question: '¿Cómo se inserta una imagen en una página HTML?',
     category: HTML,
     correct_answer: '<img src="url_de_la_imagen" alt="texto alternativo">',
-    incorrect_answers: ['<image src="url_de_la_imagen" alt="texto alternativo">', '<pic src="url_de_la_imagen" alt="texto alternativo">', '<src="url_de_la_imagen" alt="texto alternativo">'],
+    incorrect_answers: [
+      '<image src="url_de_la_imagen" alt="texto alternativo">',
+      '<pic src="url_de_la_imagen" alt="texto alternativo">',
+      '<src="url_de_la_imagen" alt="texto alternativo">',
+    ],
   },
   {
     id: 25,
@@ -293,12 +290,12 @@ export const questions = [
   },
   {
     id: 29,
-    difficulty: 'Medio',
+    difficulty: 'Fácil',
     question:
-      '¿Qué jugador de fútbol ha ganado más Balones de Oro en la historia?',
-    category: deportes,
-    correct_answer: 'Lionel Messi',
-    incorrect_answers: ['Cristiano Ronaldo', 'Johan Cruyff', 'Diego Maradona'],
+      '¿Qué propiedad se usa para alinear texto en el centro de un elemento?',
+    category: CSS,
+    correct_answer: 'text-align',
+    incorrect_answers: ['align-text', 'center', 'justify'],
   },
   {
     id: 30,
@@ -617,72 +614,72 @@ export const questions = [
   {
     id: 62,
     difficulty: 'Fácil',
-    question: '¿Qué país ganó la Copa Mundial de la FIFA en 2018?',
-    category: deportes,
-    correct_answer: 'Francia',
-    incorrect_answers: ['Alemania', 'Brasil', 'Argentina'],
+    question:
+      '¿Qué valor de la propiedad "display" se utiliza para hacer que un elemento no se muestre?',
+    category: CSS,
+    correct_answer: 'none',
+    incorrect_answers: ['block', 'inline', 'hidden'],
   },
   {
     id: 63,
     difficulty: 'Fácil',
-    question: '¿Qué deporte se juega en Wimbledon?',
-    category: deportes,
-    correct_answer: 'Tenis',
-    incorrect_answers: ['Golf', 'Fútbol', 'Rugby'],
+    question:
+      '¿Qué propiedad se utiliza para establecer el margen externo de un elemento?',
+    category: CSS,
+    correct_answer: 'margin',
+    incorrect_answers: ['padding', 'border', 'spacing'],
   },
   {
     id: 64,
-    difficulty: 'Medio',
-    question: '¿Cuántos puntos vale un touchdown en el fútbol americano?',
-    category: deportes,
-    correct_answer: '6',
-    incorrect_answers: ['4', '7', '5'],
+    difficulty: 'Fácil',
+    question: '¿Qué propiedad CSS se utiliza para agregar sombra a un texto?',
+    category: CSS,
+    correct_answer: 'text-shadow',
+    incorrect_answers: ['box-shadow', 'shadow', 'font-shadow'],
   },
   {
     id: 65,
-    difficulty: 'Medio',
+    difficulty: 'Fácil',
     question:
-      '¿Cuál es el jugador de baloncesto con más anillos de campeonato en la NBA?',
-    category: deportes,
-    correct_answer: 'Bill Russell',
-    incorrect_answers: [
-      'Michael Jordan',
-      'Kareem Abdul-Jabbar',
-      'LeBron James',
-    ],
+      '¿Cuál es la propiedad utilizada para cambiar la imagen de fondo de un elemento?',
+    category: CSS,
+    correct_answer: 'background-image',
+    incorrect_answers: ['image', 'background', 'bg-image'],
   },
   {
     id: 66,
-    difficulty: 'Medio',
-    question: '¿Cuál es el país de origen del futbolista Lionel Messi?',
-    category: deportes,
-    correct_answer: 'Argentina',
-    incorrect_answers: ['Brasil', 'España', 'Portugal'],
+    difficulty: 'Fácil',
+    question: '¿Qué propiedad se utiliza para cambiar el estilo de una fuente?',
+    category: CSS,
+    correct_answer: 'font-family',
+    incorrect_answers: ['font-style', 'text-font', 'font'],
   },
   {
     id: 67,
-    difficulty: 'Difícil',
-    question: '¿En qué año se celebraron los Juegos Olímpicos de Beijing?',
-    category: deportes,
-    correct_answer: '2008',
-    incorrect_answers: ['2012', '2004', '2016'],
+    difficulty: 'Fácil',
+    question:
+      '¿Qué propiedad CSS se utiliza para redondear las esquinas de un elemento?',
+    category: CSS,
+    correct_answer: 'border-radius',
+    incorrect_answers: ['border-round', 'corner-radius', 'radius'],
   },
   {
     id: 68,
-    difficulty: 'Difícil',
+    difficulty: 'Fácil',
     question:
-      '¿Quién es el máximo goleador en la historia de la Liga Española?',
-    category: deportes,
-    correct_answer: 'Lionel Messi',
-    incorrect_answers: ['Cristiano Ronaldo', 'Telmo Zarra', 'Hugo Sánchez'],
+      '¿Qué propiedad se usa para controlar la opacidad de un elemento?',
+    category: CSS,
+    correct_answer: 'opacity',
+    incorrect_answers: ['transparency', 'visibility', 'filter'],
   },
   {
     id: 69,
-    difficulty: 'Difícil',
-    question: '¿En qué deporte se utiliza el término "smash"?',
-    category: deportes,
-    correct_answer: 'Bádminton',
-    incorrect_answers: ['Voleibol', 'Tenis', 'Squash'],
+    difficulty: 'Media',
+    question:
+      '¿Cuál es la propiedad CSS que se utiliza para cambiar el tamaño del texto?',
+    category: CSS,
+    correct_answer: 'font-size',
+    incorrect_answers: ['text-size', 'font-weight', 'text-style'],
   },
   {
     id: 70,
@@ -796,7 +793,8 @@ export const questions = [
   {
     id: 80,
     difficulty: 'Media',
-    question: '¿Cuál es el atributo correcto para abrir un enlace en una nueva pestaña o ventana?',
+    question:
+      '¿Cuál es el atributo correcto para abrir un enlace en una nueva pestaña o ventana?',
     category: HTML,
     correct_answer: 'target="_blank"',
     incorrect_answers: ['new="_tab"', 'open="new"', 'window="new"'],
@@ -806,8 +804,7 @@ export const questions = [
     category: HTML,
     difficulty: 'Medio',
     question: '¿Cómo se especifica un fondo de color para una página HTML?',
-    correct_answer:
-      '<body style="background-color:lightblue;">',
+    correct_answer: '<body style="background-color:lightblue;">',
     incorrect_answers: [
       '<background color="lightblue">',
       '<body bgcolor="lightblue">',
@@ -818,14 +815,10 @@ export const questions = [
     id: 82,
     category: HTML,
     difficulty: 'Media',
-    question: '¿Qué etiqueta se usa para crear una celda de encabezado en una tabla HTML?',
-    correct_answer:
-      '<th>',
-    incorrect_answers: [
-      '<thead>',
-      '<header>',
-      '<trh>',
-    ],
+    question:
+      '¿Qué etiqueta se usa para crear una celda de encabezado en una tabla HTML?',
+    correct_answer: '<th>',
+    incorrect_answers: ['<thead>', '<header>', '<trh>'],
   },
   {
     id: 83,
@@ -853,8 +846,7 @@ export const questions = [
     category: HTML,
     difficulty: 'Media',
     question: '¿Cómo se especifica una lista ordenada en HTML?',
-    correct_answer:
-      '<ol><li>Elemento 1</li><li>Elemento 2</li></ol>',
+    correct_answer: '<ol><li>Elemento 1</li><li>Elemento 2</li></ol>',
     incorrect_answers: [
       '<ul><li>Elemento 1</li><li>Elemento 2</li></ul>',
       '<ordered><li>Elemento 1</li><li>Elemento 2</li></ordered>',
@@ -863,86 +855,161 @@ export const questions = [
   },
   {
     id: 86,
-    category: "HTML",
-    difficulty: "Media",
-    question: "¿Qué etiqueta HTML se utiliza para definir una sección independiente de contenido en un documento HTML?",
-    correct_answer: "<section>",
-    incorrect_answers: [
-      "<div>",
-      "<article>",
-      "<header>"
-    ]
+    category: HTML,
+    difficulty: 'Media',
+    question:
+      '¿Qué etiqueta HTML se utiliza para definir una sección independiente de contenido en un documento HTML?',
+    correct_answer: '<section>',
+    incorrect_answers: ['<div>', '<article>', '<header>'],
   },
   {
     id: 87,
-    category: "HTML",
-    difficulty: "Media",
-    question: "¿Cuál es la forma correcta de crear un comentario en HTML?",
-    correct_answer: "<!-- Este es un comentario -->",
+    category: HTML,
+    difficulty: 'Media',
+    question: '¿Cuál es la forma correcta de crear un comentario en HTML?',
+    correct_answer: '<!-- Este es un comentario -->',
     incorrect_answers: [
-      "/* Este es un comentario */",
-      "// Este es un comentario",
-      "<-- Este es un comentario -->"
-    ]
+      '/* Este es un comentario */',
+      '// Este es un comentario',
+      '<-- Este es un comentario -->',
+    ],
   },
   {
     id: 88,
-    category: "HTML",
-    difficulty: "Media",
-    question: "¿Cómo se define una celda en una tabla HTML?",
-    correct_answer: "<td>",
-    incorrect_answers: [
-      "<tr>",
-      "<cell>",
-      "<tabledata>"
-    ]
+    category: HTML,
+    difficulty: 'Media',
+    question: '¿Cómo se define una celda en una tabla HTML?',
+    correct_answer: '<td>',
+    incorrect_answers: ['<tr>', '<cell>', '<tabledata>'],
   },
   {
     id: 89,
-    category: "HTML",
-    difficulty: "Media",
-    question: "¿Qué atributo HTML se usa para combinar celdas horizontalmente en una tabla?",
-    correct_answer: "colspan",
-    incorrect_answers: [
-      "rowspan",
-      "merge",
-      "span"
-    ]
+    category: HTML,
+    difficulty: 'Media',
+    question:
+      '¿Qué atributo HTML se usa para combinar celdas horizontalmente en una tabla?',
+    correct_answer: 'colspan',
+    incorrect_answers: ['rowspan', 'merge', 'span'],
   },
   {
     id: 90,
-    category: "HTML",
-    difficulty: "Media",
-    question: "¿Cuál es la etiqueta HTML correcta para reproducir un video?",
-    correct_answer: "<video>",
-    incorrect_answers: [
-      "<vid>",
-      "<media>",
-      "<movie>"
-    ]
+    category: HTML,
+    difficulty: 'Media',
+    question: '¿Cuál es la etiqueta HTML correcta para reproducir un video?',
+    correct_answer: '<video>',
+    incorrect_answers: ['<vid>', '<media>', '<movie>'],
   },
   {
     id: 91,
-    category: "HTML",
-    difficulty: "Media",
-    question: "¿Cómo se define un área de texto en un formulario HTML?",
-    correct_answer: "<textarea>",
+    category: HTML,
+    difficulty: 'Media',
+    question: '¿Cómo se define un área de texto en un formulario HTML?',
+    correct_answer: '<textarea>',
     incorrect_answers: [
-      "<input type=\"textarea\">",
-      "<textbox>",
-      "<input type=\"text\">"
-    ]
+      '<input type="textarea">',
+      '<textbox>',
+      '<input type="text">',
+    ],
   },
   {
     id: 92,
-    category: "HTML",
-    difficulty: "Media",
-    question: "¿Qué atributo se utiliza para establecer un enlace anclado (bookmark) dentro de una página HTML?",
-    correct_answer: "id",
+    category: HTML,
+    difficulty: 'Media',
+    question:
+      '¿Qué atributo se utiliza para establecer un enlace anclado (bookmark) dentro de una página HTML?',
+    correct_answer: 'id',
+    incorrect_answers: ['name', 'href', 'link'],
+  },
+  {
+    id: 93,
+    category: CSS,
+    difficulty: 'Media',
+    question:
+      '¿Cuál es la propiedad CSS que se utiliza para cambiar el tamaño del texto?',
+    correct_answer: 'font-size',
+    incorrect_answers: ['text-size', 'font-weight', 'text-style'],
+  },
+  {
+    id: 94,
+    category: CSS,
+    difficulty: 'Media',
+    question:
+      '¿Qué valor de la propiedad "display" se utiliza para crear un contenedor flexible?',
+    correct_answer: 'flex',
+    incorrect_answers: ['grid', 'block', 'inline'],
+  },
+  {
+    id: 95,
+    category: CSS,
+    difficulty: 'Media',
+    question:
+      '¿Qué propiedad se usa para controlar el espaciado interno de un elemento?',
+    correct_answer: 'padding',
+    incorrect_answers: ['margin', 'border', 'spacing'],
+  },
+  {
+    id: 96,
+    category: CSS,
+    difficulty: 'Media',
+    question: '¿Cómo se puede aplicar un efecto de transición en CSS?',
+    correct_answer: 'transition',
+    incorrect_answers: ['animation', 'transform', 'hover'],
+  },
+  {
+    id: 97,
+    category: CSS,
+    difficulty: 'Media',
+    question:
+      '¿Qué propiedad se utiliza para aplicar un efecto de desenfoque a un elemento?',
+    correct_answer: 'filter',
+    incorrect_answers: ['blur', 'opacity', 'shadow'],
+  },
+  {
+    id: 98,
+    category: CSS,
+    difficulty: 'Media',
+    question:
+      '¿Cuál es la propiedad para establecer la posición de un elemento en CSS?',
+    correct_answer: 'position',
+    incorrect_answers: ['align', 'layout', 'float'],
+  },
+  {
+    id: 99,
+    category: CSS,
+    difficulty: 'Media',
+    question:
+      '¿Qué propiedad se utiliza para definir un borde alrededor de un elemento?',
+    correct_answer: 'border',
+    incorrect_answers: ['outline', 'margin', 'padding'],
+  },
+  {
+    id: 100,
+    category: CSS,
+    difficulty: 'Media',
+    question:
+      '¿Cómo se define un estilo para un elemento al pasar el ratón sobre él?',
+    correct_answer: 'pseudo-clase :hover',
+    incorrect_answers: ['pseudo-element :focus', 'media query', 'keyframes'],
+  },
+  {
+    id: 101,
+    category: CSS,
+    difficulty: 'Media',
+    question:
+      '¿Qué propiedad se utiliza para establecer la dirección del texto?',
+    correct_answer: 'direction',
+    incorrect_answers: ['text-align', 'text-direction', 'flow'],
+  },
+  {
+    id: 102,
+    category: CSS,
+    difficulty: 'Media',
+    question: '¿Cuál es la forma correcta de aplicar un color RGBA en CSS?',
+    correct_answer: 'rgba(255, 0, 0, 0.5)',
     incorrect_answers: [
-      "name",
-      "href",
-      "link"
-    ]
-  }
+      'rgb(255, 0, 0, 0.5)',
+      'rgba(255, 0, 0)',
+      'rgba(255, 0, 0, 50)',
+    ],
+  },
 ];

@@ -45,12 +45,16 @@ export const CategoryPage = () => {
         />
       ) : (
         <>
-          <div className="flex flex-col gap-5">
-            <h1 className="text-3xl text-teal-900 text-center font-bold">
+          <div className="flex flex-col gap-5 text-center">
+            <h1 className="text-2xl md:text-3xl text-teal-900 font-bold">
               {category}
             </h1>
-            <div className="flex justify-center items-center">
-              <img src={imgCategory} alt={category} className="w-72" />
+            <div className="flex flex-col items-center"> {/* Cambiado a flex-col */}
+              <img
+                src={imgCategory}
+                alt={category}
+                className="w-3/4 md:w-72 h-auto"
+              />
             </div>
           </div>
           <button
@@ -64,3 +68,5 @@ export const CategoryPage = () => {
     </div>
   );
 };
+
+
